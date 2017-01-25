@@ -70,6 +70,7 @@ header {
 
 .slider_image {
 	min-height: 400px;
+	vertical-align: middle;
 }
 
 .slogan {
