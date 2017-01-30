@@ -96,6 +96,52 @@ alert(result + " " + numberR + " " + enterNumber);*/
 /*var a = Math.random() * 100, b = prompt("Enter a number"), a = Math.round(a), 
 c = a < b, result = alert(c + " " + a + " " + b);*/
 
-alert( 4 - (a = b + 1) );
+/*var x, y;
+alert( "x < y = " + ((x = Math.round(Math.random() * 100)) < (y = prompt("number", ""))) + ", x = " + x + ", y = " + y );*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+/*Условные конструкции и логические операторы*/
+
+/*1.Создайте три переменные с любыми числовыми значениями.
+Используя только(!) условный оператор, 
+найдите минимальное число и отобразите на экране имя переменной и ее значение.*/
+
+/*var a = Math.random(), b = Math.random(), c = Math.random(), result;
+ result = Math.min(a,b,c);
+ console.log(a,b,c);
+ if (a === result) {
+ 	alert("a" + " " + a);
+ } else if (b === result) {
+ 	alert("b" + " " + b);
+ } else {
+ 	alert("c" + " " + c);
+ }*/
+
+/*2.В переменную x записывается число, введенное пользователем в диалоговое окно. 
+Проверить и вывести на экран, x – отрицательное число, положительное или ноль.*/
+
+/*var x = prompt("Enter a number", "");
+var result = Math.sign(x);
+switch (result) {
+	case -1 : result = "x - a negative number"; break;
+	case 1  : result = "x - a positive number"; break;
+	case 0  : result = "x - a zero";
+};
+alert(result);*/
+
+/*3.Запишите в переменные x и y значения, возвращаемые функциями prompt.
+Сложите полученные значения. Если результат суммирования больше 10, 
+то умножьте его на 10, в противном случае разделите на 10.
+Выведите на экране полученный результат.*/
+
+var x = +prompt("Enter a number of 'x'", "");
+console.log(x);
+var y = +prompt("Enter a number of 'y'", "");
+console.log(y);
+var z = x + y;
+console.log(z);
+var result = z > 10 ? z * 10 : z / 10;
+alert(result);
 
 
